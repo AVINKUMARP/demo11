@@ -101,15 +101,15 @@
 
     <div class="container my-5 t m-auto">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-6 col-sm-6">
           <a href=""><img src="../static/images/t1.webp" alt="" class="w-100"></a>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-6 col-sm-6">
           <div class="row">
-            <div class="col-lg-6"><a href=""><img src="../static/images/t2.webp" alt="" class="w-100 pb-3"></a></div>
-            <div class="col-lg-6"><a href=""><img src="../static/images/t3.jpg" alt="" class="w-100 pb-3"></a></div>
-            <div class="col-lg-6"><a href=""><img src="../static/images/t4.webp" alt="" class="w-100 pt-2"></a></div>
-            <div class="col-lg-6"><a href=""><img src="../static/images/t5.webp" alt="" class="w-100 pt-2"></a></div>
+            <div class="col-lg-6 col-md-6 col-sm-6"><a href=""><img src="../static/images/t2.webp" alt="" class="w-100 pb-3"></a></div>
+            <div class="col-lg-6 col-md-6 col-sm-6"><a href=""><img src="../static/images/t3.jpg" alt="" class="w-100 pb-3"></a></div>
+            <div class="col-lg-6 col-md-6 col-sm-6"><a href=""><img src="../static/images/t4.webp" alt="" class="w-100 pt-2"></a></div>
+            <div class="col-lg-6 col-md-6 col-sm-6"><a href=""><img src="../static/images/t5.webp" alt="" class="w-100 pt-2"></a></div>
           </div>
         </div>
       </div>
@@ -119,15 +119,15 @@
 
     <div class="container">
       <div class="row">
-        {% comment %} {{result}} {% endcomment %}
+     
        {% for i in result %}
           <div class="col-lg-3 col-md-3 col-sm-6">
-            <div class="card " style="width: 100%;">
-                <img src="{{i.img.url}}" class="card-img-top w-100" alt="...">
+            <div class="card my-3 " style="width: 100%;">
+                <img src="{{i.img.url}}" class="card-img-top w-100 text-center" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Transformers: Revenge of Fallen</h5>
-                  <p class="card-text">2009</p>
-                  <p class="card-text">₹1,30000</p>
+                  <h5 class="card-title" id="name" name="name">{{i.name}}</h5>
+                  <p class="card-text" name="year">{{i.year}}</p>
+                  <p class="card-text" name="price">{{i.price}}</p>
                   <a href="#" class="btn btn-outline-dark">ADD TO CART</a>
                   <a href="#" class="btn btn-outline-dark">BAY NOW</a>
                   <a href=""></a>
