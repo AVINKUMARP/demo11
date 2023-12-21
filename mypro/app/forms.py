@@ -10,7 +10,7 @@ class WatchForm(forms.ModelForm):
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control'}),
             'price': forms.TextInput(attrs={'class': 'form-control'}),
-            'year': forms.TextInput(attrs={'class': 'form-control'}),
+            'brand': forms.TextInput(attrs={'class': 'form-control'}),
 
         }
         widgets['img'] = forms.ClearableFileInput(attrs={'class': 'form-control-file'})
