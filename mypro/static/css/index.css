@@ -104,6 +104,21 @@
   background-color: silver;
   color: white;
 }
+.head-nav{
+  width: 100%;
+
+  background-color: black;
+  display: flex;
+  /* color: white; */
+  
+}
+.Announcement_bar{
+  color: white;
+  align-items: center;
+  margin-right: 50px;
+  font-size: large;
+  font-weight: bolder;
+}
 /* footer */
 .site-footer
 {
