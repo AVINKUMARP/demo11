@@ -82,7 +82,7 @@ def register(request):
                 return redirect('/register')
     return render(request,'register.html')
 
-def login(request):
+def user_login(request):
     if request.method=='POST':
         username=request.POST.get('username')
         pwd=request.POST.get('pwd')
@@ -94,8 +94,16 @@ def login(request):
             messages.info(request,'Invalid Entry')
             return redirect('/login')
 
-    return render(request,'login.html')
+    return render(request,'login2.html')
 
 # def logout(request):
 #     auth.logout(request)
 #     return redirect('/')
+def support(request):
+    return render(request,'support.html')
+def mec(request):
+    content=Watch.objects.all()
+    data={
+        'result':content
+    }
+    return render(request,'mec.html',data)
