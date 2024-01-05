@@ -80,7 +80,7 @@ def register(request):
             else:
                 messages.info(request, "Password Not Match")
                 return redirect('/register')
-    return render(request,'register.html')
+    return render(request,'signup.html')
 
 def user_login(request):
     if request.method=='POST':
@@ -94,16 +94,24 @@ def user_login(request):
             messages.info(request,'Invalid Entry')
             return redirect('/login')
 
-    return render(request,'login2.html')
+    return render(request,'login.html')
 
-# def logout(request):
-#     auth.logout(request)
-#     return redirect('/')
+def logout(request):
+    auth.logout(request)
+    return redirect('/')
+
 def support(request):
     return render(request,'support.html')
+
 def mec(request):
     content=Watch.objects.all()
     data={
         'result':content
     }
     return render(request,'mec.html',data)
+def auto(request):
+    content=Watch.objects.all()
+    data={
+        'result':content
+    }
+    return render(request,'auto.html',data)
