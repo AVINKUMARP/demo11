@@ -15,4 +15,8 @@ urlpatterns = [
     path('support/', views.support, name="support"),
     path('mec/', views.mec, name="mec"),
     path('auto/', views.auto, name="auto"),
+    path('smt/', views.smt, name="smt"),
+    path('qur/', views.qur, name="qur"),
+    path('cro/', views.cro, name="cro"),
+    path('about/', views.about, name="about"),
 ]

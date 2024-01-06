@@ -115,3 +115,23 @@ def auto(request):
         'result':content
     }
     return render(request,'auto.html',data)
+def smt(request):
+    content=Watch.objects.all()
+    data={
+        'result':content
+    }
+    return render(request,'smt.html',data)
+def qur(request):
+    content=Watch.objects.all()
+    data={
+        'result':content
+    }
+    return render(request,'qur.html',data)
+def cro(request):
+    content=Watch.objects.all()
+    data={
+        'result':content
+    }
+    return render(request,'cro.html',data)
+def about(request):
+    return render(request,'about.html')

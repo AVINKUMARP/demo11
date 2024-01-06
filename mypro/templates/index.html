@@ -29,7 +29,7 @@
               <a class="nav-link text-light" aria-current="page" href="{% url 'index' %}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Link</a>
+              <a class="nav-link text-light" href="{% url 'about' %}">About</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -100,9 +100,9 @@
         <div class="col-lg-6 col-md-12 col-sm-6">
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6"><a href="{% url 'auto' %}"><img src="../static/images/t2.webp" alt="" class="w-100 pb-3"></a></div>
-            <div class="col-lg-6 col-md-6 col-sm-6"><a href=""><img src="../static/images/t3.jpg" alt="" class="w-100 pb-3"></a></div>
-            <div class="col-lg-6 col-md-6 col-sm-6"><a href=""><img src="../static/images/t4.webp" alt="" class="w-100 pt-2"></a></div>
-            <div class="col-lg-6 col-md-6 col-sm-6"><a href=""><img src="../static/images/t5.webp" alt="" class="w-100 pt-2"></a></div>
+            <div class="col-lg-6 col-md-6 col-sm-6"><a href="{% url 'qur' %}"><img src="../static/images/t3.jpg" alt="" class="w-100 pb-3"></a></div>
+            <div class="col-lg-6 col-md-6 col-sm-6"><a href="{% url 'cro' %}"><img src="../static/images/t4.webp" alt="" class="w-100 pt-2"></a></div>
+            <div class="col-lg-6 col-md-6 col-sm-6"><a href="{% url 'smt' %}"><img src="../static/images/t5.webp" alt="" class="w-100 pt-2"></a></div>
           </div>
         </div>
       </div>
